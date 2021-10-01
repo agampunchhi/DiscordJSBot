@@ -18,6 +18,9 @@ client.on("message", function(message) {
  else if (command == "chonk") {
    message.reply('https://tenor.com/beZak.gif')
  }
+ else if (command == "mohan") {
+  message.reply('https://tenor.com/YqvV.gif')
+}
  else if (command == "badadonk") {
    message.reply('https://tenor.com/bIxJp.gif')
  }
