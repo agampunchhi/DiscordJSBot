@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@haileybot/captcha-generator": "^1.7.0",
     "discord.js": "^12.5.1"
   }
 }
