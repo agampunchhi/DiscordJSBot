@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const prefix = "69";
 client.once('ready', () => {
   console.log(`${client.user.tag} is ready!`);
-  client.user.setActivity(`fetch', {
+  client.user.setActivity('fetch', {
     type: 'Playing',
   });
 client.on("message", function(message) {
