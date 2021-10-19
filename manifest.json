@@ -1,0 +1,17 @@
+{
+    "name": "Putadidas",
+    "description": "PutaCheckout Adidas",
+    "manifest_version": 2,
+    "version": "1.0",    
+    "permissions": ["https://putanonveg.herokuapp.com/","tabs", "<all_urls>", "storage","notifications","webRequest","webRequestBlocking","webNavigation","nativeMessaging"], 
+    "content_security_policy": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src *; object-src 'none'; frame-ancestors http://127.0.0.1:*;", 
+    "content_scripts": [
+        {
+          "matches": ["*://*.adidas.co.in/*"],
+          "js": ["addToBag.js"]
+        }
+      ],
+    "browser_action": {  
+        "default_title": "Putadidas"  
+    }
+}
